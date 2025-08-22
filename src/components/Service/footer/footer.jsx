@@ -1,7 +1,7 @@
 function Footer(){
 return(
     <>
-    <div className="bg-black opacity-90 w-full p-1 h-72 md:p-20 md:pt-20 font-bold font-serif ">
+    <div className="bg-black opacity-90 w-full p-1 h-64 md:h-72 md:p-20 md:pt-20 font-bold font-serif ">
     <h1 className="ml-20 md:text-3xl  underline underline-offset-8 decoration-3 decoration-pink-800 text-white md:ml-70  ">Subscribe To Our Newsletter</h1>
 
 <input type="email" placeholder="your email address" className="ml-10 rounded p-2 border-2 w-52 h-11 md:mr-3 text-white md:ml-80 md:mt-5 "/>
