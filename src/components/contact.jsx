@@ -171,7 +171,7 @@ className="w-full max-w-lg   p-6 rounded-lg  space-y-4"
 </div>
 <div>    
   <label className="block mb-1 font-medium">Color</label>    
-  <input type="color" {...register("color")} className="w-110 h-8 p-0  rounded-full" />    
+  <input type="color" {...register("color")} className="w-72 md:w-110 h-8 p-0  rounded-full" />    
   {errors.color && <p className="text-red-500 text-sm">{errors.color.message}</p>}    
 </div>  
 <div className="flex items-center space-x-2">
