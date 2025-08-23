@@ -1,25 +1,5 @@
 
-// function Contact(){
-//     return(
-// < >
-// {/* <div className="w-full h-120 ml-0 mr-0 mt-0 
-//   bg-gradient-to-l from-pink-800 via-purple-500 to-blue-400 ">
-   
-//     <form className="m-auto shadow-amber-300 w-50 h-50  p-6 " >
-//          <h1 className="text-center mb-4 ml-1 underline underline-offset-8 decoration-4 decoration-pink-700   rounded-2xl text-black text-2xl font-bold ">Login Form:</h1>
-//          <input type="email" placeholder="Please enter your email " className= "border-black border-3 w-56 rounded" /><br></br><br></br>
-//         <input type="text" placeholder="Please enter your name " className="border-black border-3 w-56 rounded" /><br></br><br></br>
-//          <input type="text" placeholder="Please enter your contact no" className="border-black border-3 w-56 rounded " /><br></br><br></br>
-//           <input type="text" placeholder="Please enter your address" className="border-black border-3 w-56 rounded " /><br></br><br></br>
-// <button className="mt-4 bg-pink-800 w-40 p-2 rounded ">Submit</button>
-//     </form>
-// </div> */}
 
-
-// </>
-//     );
-// }
-// export default Contact;
 import React from "react";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
@@ -94,12 +74,6 @@ className="w-full max-w-lg   p-6 rounded-lg  space-y-4"
 </div>    
 
     
-
-<div>    
-  <label className="block mb-1 font-medium">Number</label>    
-  <input type="number" {...register("number")} placeholder="Enter number" className="border p-2 w-full rounded" />    
-  {errors.number && <p className="text-red-500 text-sm">{errors.number.message}</p>}    
-</div>    
   
 
 <div>    
@@ -120,23 +94,7 @@ className="w-full max-w-lg   p-6 rounded-lg  space-y-4"
   {errors.file && <p className="text-red-500 text-sm">{errors.file.message}</p>}    
 </div>    
 
-<div>    
-  <label className="block mb-1 font-medium">Month</label>    
-  <input type="month" {...register("month")}  className="border p-2 w-full rounded" />    
-  {errors.month && <p className="text-red-500 text-sm">{errors.month.message}</p>}    
-</div>    
 
-<div>    
-  <label className="block mb-1 font-medium">Range:{rangeValue}</label>    
-  <input type="range" {...register("range")} min="0" max="50" step="1" className="w-full" />    
-  {errors.range && <p className="text-red-500 text-sm">{errors.range.message}</p>}    
-</div>    
-
-<div>    
-  <label className="block mb-1 font-medium">Search</label>    
-  <input type="search" {...register("search")} placeholder="Search something..." className="border p-2 w-full rounded" />    
-  {errors.search && <p className="text-red-500 text-sm">{errors.search.message}</p>}    
-</div>    
 
 <div>    
   <label className="block mb-1 font-medium">Phone</label>    
@@ -150,17 +108,8 @@ className="w-full max-w-lg   p-6 rounded-lg  space-y-4"
   {errors.time && <p className="text-red-500 text-sm">{errors.time.message}</p>}    
 </div>    
 
-<div>    
-  <label className="block mb-1 font-medium">URL</label>    
-  <input type="url" {...register("url")} placeholder="https://example.com" className="border p-2 w-full rounded" />    
-  {errors.url && <p className="text-red-500 text-sm">{errors.url.message}</p>}    
-</div>    
 
-<div>    
-  <label className="block mb-1 font-medium">Week</label>    
-  <input type="week" {...register("week")} className="border p-2 w-full rounded" />    
-  {errors.week && <p className="text-red-500 text-sm">{errors.week.message}</p>}    
-</div>   
+
 <div>    
   <label className="block mb-1 font-medium">Gender</label>    
   <div className="flex space-x-4">    
@@ -169,11 +118,7 @@ className="w-full max-w-lg   p-6 rounded-lg  space-y-4"
   </div>    
   {errors.gender && <p className="text-red-500 text-sm">{errors.gender.message}</p>}    
 </div>
-<div>    
-  <label className="block mb-1 font-medium">Color</label>    
-  <input type="color" {...register("color")} className="w-72 md:w-110 h-8 p-0  rounded-full" />    
-  {errors.color && <p className="text-red-500 text-sm">{errors.color.message}</p>}    
-</div>  
+
 <div className="flex items-center space-x-2">
   <input type="checkbox" {...register("checkbox")} id="terms" className="h-4 w-4" />
   <label htmlFor="terms" className="font-medium">Accept Terms & Conditions</label>
